@@ -1,4 +1,5 @@
 import 'package:atividade_final_dart/utilidades.dart';
+import 'package:yaansi/yaansi.dart';
 
 
 void chamarMetodosUmidade(String uF) async {
@@ -34,10 +35,8 @@ Future<void> analiseAnualUmidade(String estado) async{
   final minUmidade  = umidade.reduce((a, b) => a < b ? a : b);
 
   //Imprime os valores da média
-  print('Umidade coletada em $estado por ano:');
-  print('Máxima: ${maxUmidade.toStringAsFixed(2)}');
-  print('Média: ${mediaUmidade.toStringAsFixed(2)}');
-  print('Mínima: ${minUmidade .toStringAsFixed(2)}\n');
+  String texto = 'Umidade coletada em $estado por ano:';
+  imprimirUmidade(texto, maxUmidade, mediaUmidade, minUmidade);
 
 }
 
@@ -66,17 +65,21 @@ Future<void> analiseMensalUmidade(String estado) async{
 
     //Calcula a soma e depois a média retornada no mes
     final soma = umidade.reduce((a , b) => a + b);
-    final media = soma/umidade.length;
+    final mediaUmidade = soma/umidade.length;
 
     //Calcula a máxima e a mínima
     final maxUmidade = umidade.reduce((a, b) => a > b ? a : b);
     final minUmidade = umidade.reduce((a, b) => a < b ? a : b);
 
     //Imprime os valores da média
-    print('No mês $mes');
-    print('Máxima: ${maxUmidade.toStringAsFixed(2)}');
-    print('Média: ${media.toStringAsFixed(2)}');
-    print('Mínima: ${minUmidade.toStringAsFixed(2)}\n');
+    String texto = 'No mês $mes';
+    imprimirUmidade(texto, maxUmidade, mediaUmidade, minUmidade);
 
   }
+}
+void imprimirUmidade (String texto, num maxUmidade, num mediaUmidade, num minUmidade){
+  print(texto);
+  print('Máxima: ${maxUmidade.toStringAsFixed(2)}'.red);
+  print('Média: ${mediaUmidade.toStringAsFixed(2)}'.green);
+  print('Mínima: ${minUmidade .toStringAsFixed(2)}\n'.blue);
 }

@@ -2,6 +2,7 @@ import 'dart:collection';
 import 'dart:math';
 
 import 'package:atividade_final_dart/utilidades.dart';
+import 'package:yaansi/yaansi.dart';
 
 Future<void> chamarMetodosVento(String uF) async {
   await direcaoMaisFrequenteAnual(uF);
@@ -35,12 +36,12 @@ Future<void> direcaoMaisFrequenteAnual(String estado) async {
   }
 
   //Encontra a direção com maior frequência
-  var direcaoMaisFrequente = frequencias.entries.reduce((a, b) => a.value > b.value ? a : b);
+  var maisFrequente = frequencias.entries.reduce((a, b) => a.value > b.value ? a : b);
 
   //Imprime a direção mais frequente em graus e radianos
-  print('Direção do vento mais frequente em $estado por ano:');
-  print('Graus: ${direcaoMaisFrequente.key}');
-  print('Radianos: ${paraRadianos(direcaoMaisFrequente.key.toDouble())}\n');
+  String texto = 'Direção do vento mais frequente em $estado por ano:';
+  imprimirVento(texto, maisFrequente);
+
 }
 
 Future<void> direcaoMaisFrequenteMensal(String estado) async {
@@ -78,8 +79,13 @@ Future<void> direcaoMaisFrequenteMensal(String estado) async {
     final maisFrequente = frequencia.entries.reduce((a, b) => a.value > b.value ? a : b);
 
     //Imprime a direção mais frequente em graus e radianos
-    print('Mês $mes');
-    print('Graus: ${maisFrequente.key}');
-    print('Radianos: ${paraRadianos(maisFrequente.key.toDouble())}\n');
+    String texto = 'Mês $mes';
+    imprimirVento(texto, maisFrequente);
   }
+}
+
+void imprimirVento(String texto, MapEntry<num, int> maisFrequente ){
+  print(texto);
+  print('Graus: ${maisFrequente.key}'.yellow);
+  print('Radianos: ${paraRadianos(maisFrequente.key.toDouble())}\n'.yellow);
 }
