@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:atividade_final_dart/relatorio_temperatura.dart';
 import 'package:atividade_final_dart/relatorio_umidade_do_ar.dart';
-
+import 'package:atividade_final_dart/relatorio_vento.dart';
 void main () async {
   bool continuar = true;
   print('OLÁ, LEANDRO. QUE RELATÓRIO VOCÊ PRECISA? '
@@ -23,11 +23,13 @@ void main () async {
       case '2':
         print('\n');
         chamarMetodosUmidade('SC');
+        chamarMetodosUmidade('SP');
         continuar=false;
         break;
       case '3':
         print('\n');
-        //relatorioDirecaoVento();
+        chamarMetodosVento('SC');
+        chamarMetodosVento('SP');
         continuar=false;
         break;
       default:

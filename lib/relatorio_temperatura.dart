@@ -1,6 +1,7 @@
 import 'package:atividade_final_dart/utilidades.dart';
+import 'package:yaansi/yaansi.dart';
 
-void chamarMetodosTemperatura(String uF) async {
+Future<void> chamarMetodosTemperatura(String uF) async {
   await analiseAnulTemperatura(uF);
   await analiseMensalTemperatura(uF);
   await mediaPorHora(uF);
@@ -39,11 +40,13 @@ Future<void> analiseAnulTemperatura (String estado) async {
   print('C°: ${mediaTemp.toStringAsFixed(2)}');
   print('Fahrenheit: ${paraFahrenheit(mediaTemp)}');
   print('Kelvin: ${paraKelvin(mediaTemp)}\n');
+
   //Imprime o valor da máxima e converte 
   print('Temperatura máxima:');
   print('C°: ${maxTemp.toStringAsFixed(2)}');
   print('Fahrenheit: ${paraFahrenheit(maxTemp.toDouble())}');
   print('Kelvin: ${paraKelvin(maxTemp.toDouble())}\n');
+
   //Imprime o valor da minima e converte
   print('Temperatura mínima:');
   print('C°: ${minTemp.toStringAsFixed(2)}');
@@ -82,16 +85,19 @@ Future<void> analiseMensalTemperatura(String estado) async {
     //Calcula a máxima e a mínima
     final maxTemp = temperaturas.reduce((a, b) => a > b ? a : b);
     final minTemp = temperaturas.reduce((a, b) => a < b ? a : b);
+
     //Imprime os valores e converte
     print('Média no mês $i');
     print('C°: ${media.toStringAsFixed(2)}');
     print('Fahrenheit: ${paraFahrenheit(media)}');
     print('Kelvin: ${paraKelvin(media)}\n');
+
     //Imprime o valor da máxima e converte 
     print('Temperatura máxima:');
     print('C°: ${maxTemp.toStringAsFixed(2)}');
     print('Fahrenheit: ${paraFahrenheit(maxTemp.toDouble())}');
     print('Kelvin: ${paraKelvin(maxTemp.toDouble())}\n');
+
     //Imprime o valor da minima e converte
     print('Temperatura mínima:');
     print('C°: ${minTemp.toStringAsFixed(2)}');
@@ -110,18 +116,18 @@ Future<void> mediaPorHora(String estado) async {
   print('Média, Máxima e Mínima de temperatura no estado de $estado por hora:');
 
   //For para cada hora do dia (de 1 até 24)
-  for (int i = 1; i <= 24; i++) {
+  for (int mes = 1; mes <= 24; mes++) {
     // Filtra os dados para pegar as temperaturas da hora atual
     final temperaturas = dados
         .where((dados) =>
-            int.tryParse(dados['Hora'].toString()) == i && //Verifica se a Hora convertida para int é igual do loop
+            int.tryParse(dados['Hora'].toString()) == mes && //Verifica se a Hora convertida para int é igual do loop
             dados['Temperatura'] is num) //Garante que a temperatura seja numérica
         .map((dados) => dados['Temperatura'] as num) //Converte para num
         .toList(); //Converte para lista
 
     //Verifica se não retornou vazio
     if (temperaturas.isEmpty) {
-      print('Hora $i: Sem dados.\n');
+      print('Hora $mes: Sem dados.\n');
       continue;
     }
 
@@ -130,7 +136,7 @@ Future<void> mediaPorHora(String estado) async {
     final media = soma / temperaturas.length;
 
     //Imprime os valores e converte
-    print('Hora $i');
+    print('Hora $mes');
     print('Média C°: ${media.toStringAsFixed(2)}');
     print('Fahrenheit: ${paraFahrenheit(media)}');
     print('Kelvin: ${paraKelvin(media)}\n');

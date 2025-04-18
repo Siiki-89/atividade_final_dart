@@ -34,7 +34,7 @@ Future<void> analiseAnualUmidade(String estado) async{
   final minUmidade  = umidade.reduce((a, b) => a < b ? a : b);
 
   //Imprime os valores da média
-  print('Umidade coleta em $estado por ano:');
+  print('Umidade coletada em $estado por ano:');
   print('Máxima: ${maxUmidade.toStringAsFixed(2)}');
   print('Média: ${mediaUmidade.toStringAsFixed(2)}');
   print('Mínima: ${minUmidade .toStringAsFixed(2)}\n');
@@ -51,16 +51,16 @@ Future<void> analiseMensalUmidade(String estado) async{
   print('Umidade no estado de $estado por mês:');
 
   //For para cada mês do ano (1 até 12)
-  for(int i = 1; i <= 12; i++){
+  for(int mes = 1; mes <= 12; mes++){
     final umidade = dados
         .where((dados)=>
-          int.tryParse(dados['Mes'].toString()) == i && //Verifica se o Mes convertido para int é igual o mes do loop
+          int.tryParse(dados['Mes'].toString()) == mes && //Verifica se o Mes convertido para int é igual o mes do loop
           dados['Umidade'] is num) //Garante que a umidade seja numérica
         .map((dados) => dados['Umidade'] as num) //Converte para num
         .toList(); //Converte para lista
     //Verifica se nao retornou vazio
     if (umidade.isEmpty) {
-      print('Mês $i: Sem dados.\n');
+      print('Mês $mes: Sem dados.\n');
       continue;
     }
 
@@ -73,9 +73,9 @@ Future<void> analiseMensalUmidade(String estado) async{
     final minUmidade = umidade.reduce((a, b) => a < b ? a : b);
 
     //Imprime os valores da média
-    print('No mês $i');
+    print('No mês $mes');
     print('Máxima: ${maxUmidade.toStringAsFixed(2)}');
-    print('Média: ${soma.toStringAsFixed(2)}');
+    print('Média: ${media.toStringAsFixed(2)}');
     print('Mínima: ${minUmidade.toStringAsFixed(2)}\n');
 
   }

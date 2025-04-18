@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'ler_csv.dart';
 
 //Colunas de identificação
@@ -26,3 +28,10 @@ Future<List<Map<String, dynamic>>> obterLinhasValidas(String estado) async {
       .map((linha) => Map.fromIterables(colunas, linha))
       .toList();
 }
+
+// Velocidade do vento
+String paraKmH(double ms) => (ms * 3.6).toStringAsFixed(2);
+String paraMph(double ms) => (ms * 2.23694).toStringAsFixed(2);
+
+// Direção do vento
+String paraRadianos(double graus) => (graus * (pi / 180)).toStringAsFixed(4);
