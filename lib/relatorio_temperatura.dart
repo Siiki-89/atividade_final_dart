@@ -1,9 +1,6 @@
 import 'package:atividade_final_dart/utilidades.dart';
 
-
-
-
-void chamarMetodos(String uF) async {
+void chamarMetodosTemperatura(String uF) async {
   await analiseAnulTemperatura(uF);
   await analiseMensalTemperatura(uF);
   await mediaPorHora(uF);
@@ -26,7 +23,7 @@ Future<void> analiseAnulTemperatura (String estado) async {
   //Verifica se retornou vazia
 
   if (temperaturas.isEmpty) {
-    print('Nenhuma temperatura válida encontrada.');
+    print('Nenhuma temperatura válida encontrada.\n');
     return;
   }
   //Calcula a soma e depois a media das temperaturas retornadas por estado
@@ -61,7 +58,7 @@ Future<void> analiseMensalTemperatura(String estado) async {
   //Verifica se as linhas estão vazias
   if (dados.isEmpty) return;
 
-  print('Leitura no estado de $estado por mês:');
+  print('Temperatura no estado de $estado por mês:');
 
   //For para cada mês do ano (1 até 12)
   for (int i = 1; i <= 12; i++) {
@@ -82,6 +79,7 @@ Future<void> analiseMensalTemperatura(String estado) async {
     final soma = temperaturas.reduce((a, b) => a + b);
     final media = soma / temperaturas.length;
 
+    //Calcula a máxima e a mínima
     final maxTemp = temperaturas.reduce((a, b) => a > b ? a : b);
     final minTemp = temperaturas.reduce((a, b) => a < b ? a : b);
     //Imprime os valores e converte
