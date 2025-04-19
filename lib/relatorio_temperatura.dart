@@ -73,6 +73,7 @@ Future<void> analiseMensalTemperatura(String estado) async {
     if (dados.isEmpty) return;
 
     buffer.writeln('Temperatura no estado de $estado por mês:');
+    print('Temperatura no estado de $estado por mês:');
 
     //For para cada mês do ano (1 até 12)
     for (int mes = 1; mes <= 12; mes++) {
@@ -115,6 +116,7 @@ Future<void> mediaPorHora(String estado) async {
     if (dados.isEmpty) return;
 
     buffer.writeln('Média, Máxima e Mínima de temperatura no estado de $estado por hora:');
+    print('Média, Máxima e Mínima de temperatura no estado de $estado por hora:');
 
     //For para cada hora do dia (de 1 até 24)
     for (int mes = 1; mes <= 24; mes++) {
@@ -149,36 +151,43 @@ Future<void> mediaPorHora(String estado) async {
 void imprimirTemperaturas(String texto, double media, num maxTemp, num minTemp) async {
 //Utilizando o buffer para salvar o texto, printar no terminal e usa-lo para gerar o relatorio 
   if(maxTemp == 0 && minTemp == 0){
+    // Cria uma String temporária para imprimir
+    final trecho = StringBuffer();
+
     //mediaPorHora
-    buffer.writeln('$texto:');
-    buffer.writeln('Média C°: ${media.toStringAsFixed(2)}'.red);
-    buffer.writeln('Fahrenheit: ${paraFahrenheit(media)}'.yellow);
-    buffer.writeln('Kelvin: ${paraKelvin(media)}\n'.blue);
+    trecho.writeln('$texto:');
+    trecho.writeln('Média C°: ${media.toStringAsFixed(2)}'.red);
+    trecho.writeln('Fahrenheit: ${paraFahrenheit(media)}'.yellow);
+    trecho.writeln('Kelvin: ${paraKelvin(media)}\n'.blue);
 
     //Imprime e salva
-    print(buffer.toString());
+    print(trecho.toString());
+    buffer.write(trecho.toString());
   } else {
+    // Cria uma String temporária para imprimir
+    final trecho = StringBuffer();
     //Média
-    buffer.writeln('$texto:');
-    buffer.writeln('Média:');
-    buffer.writeln('C°: ${media.toStringAsFixed(2)}'.red);
-    buffer.writeln('Fahrenheit: ${paraFahrenheit(media)}'.yellow);
-    buffer.writeln('Kelvin: ${paraKelvin(media)}\n'.blue);
+    trecho.writeln('$texto:');
+    trecho.writeln('Média:');
+    trecho.writeln('C°: ${media.toStringAsFixed(2)}'.red);
+    trecho.writeln('Fahrenheit: ${paraFahrenheit(media)}'.yellow);
+    trecho.writeln('Kelvin: ${paraKelvin(media)}\n'.blue);
     
     //Máxima
-    buffer.writeln('Temperatura máxima:');
-    buffer.writeln('C°: ${maxTemp.toStringAsFixed(2)}'.red);
-    buffer.writeln('Fahrenheit: ${paraFahrenheit(maxTemp.toDouble())}'.yellow);
-    buffer.writeln('Kelvin: ${paraKelvin(maxTemp.toDouble())}\n'.blue);
+    trecho.writeln('Temperatura máxima:');
+    trecho.writeln('C°: ${maxTemp.toStringAsFixed(2)}'.red);
+    trecho.writeln('Fahrenheit: ${paraFahrenheit(maxTemp.toDouble())}'.yellow);
+    trecho.writeln('Kelvin: ${paraKelvin(maxTemp.toDouble())}\n'.blue);
     
     //Mínima
-    buffer.writeln('Temperatura mínima:');
-    buffer.writeln('C°: ${minTemp.toStringAsFixed(2)}'.red);
-    buffer.writeln('Fahrenheit: ${paraFahrenheit(minTemp.toDouble())}'.yellow);
-    buffer.writeln('Kelvin: ${paraKelvin(minTemp.toDouble())}\n'.blue);
+    trecho.writeln('Temperatura mínima:');
+    trecho.writeln('C°: ${minTemp.toStringAsFixed(2)}'.red);
+    trecho.writeln('Fahrenheit: ${paraFahrenheit(minTemp.toDouble())}'.yellow);
+    trecho.writeln('Kelvin: ${paraKelvin(minTemp.toDouble())}\n'.blue);
 
     //Imprime e salva
-    print(buffer.toString());
+    print(trecho.toString());
+    buffer.write(trecho.toString());
   }
 }
 

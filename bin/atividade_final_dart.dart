@@ -3,9 +3,7 @@ import 'package:atividade_final_dart/relatorio_temperatura.dart';
 import 'package:atividade_final_dart/relatorio_umidade_do_ar.dart';
 import 'package:atividade_final_dart/relatorio_vento.dart';
 void main () async {
-  
   bool continuar = true;
-
   print('OLÁ, LEANDRO. QUE RELATÓRIO VOCÊ PRECISA? '
     '\n1 - TEMPERATURA '
     '\n2 - UMIDADE '
