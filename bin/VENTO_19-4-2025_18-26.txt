@@ -1,0 +1,106 @@
+Direção do vento mais frequente em SC por ano:
+Graus: 30
+Radianos: 0.5236
+
+Direção do vento mais frequente em SP por ano:
+Graus: 120
+Radianos: 2.0944
+
+Direção do vento mais frequente em SC por mês:
+Mês 1
+Graus: 30
+Radianos: 0.5236
+
+Mês 2
+Graus: 210
+Radianos: 3.6652
+
+Mês 3
+Graus: 30
+Radianos: 0.5236
+
+Mês 4
+Graus: 360
+Radianos: 6.2832
+
+Mês 5
+Graus: 30
+Radianos: 0.5236
+
+Mês 6
+Graus: 360
+Radianos: 6.2832
+
+Mês 7
+Graus: 360
+Radianos: 6.2832
+
+Mês 8
+Graus: 360
+Radianos: 6.2832
+
+Mês 9
+Graus: 360
+Radianos: 6.2832
+
+Mês 10
+Graus: 30
+Radianos: 0.5236
+
+Mês 11
+Graus: 30
+Radianos: 0.5236
+
+Mês 12
+Graus: 30
+Radianos: 0.5236
+
+Direção do vento mais frequente em SP por mês:
+Mês 1
+Graus: 30
+Radianos: 0.5236
+
+Mês 2
+Graus: 120
+Radianos: 2.0944
+
+Mês 3
+Graus: 140
+Radianos: 2.4435
+
+Mês 4
+Graus: 150
+Radianos: 2.6180
+
+Mês 5
+Graus: 120
+Radianos: 2.0944
+
+Mês 6
+Graus: 30
+Radianos: 0.5236
+
+Mês 7
+Graus: 30
+Radianos: 0.5236
+
+Mês 8
+Graus: 30
+Radianos: 0.5236
+
+Mês 9
+Graus: 180
+Radianos: 3.1416
+
+Mês 10
+Graus: 180
+Radianos: 3.1416
+
+Mês 11
+Graus: 120
+Radianos: 2.0944
+
+Mês 12
+Graus: 150
+Radianos: 2.6180
+

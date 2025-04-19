@@ -1,11 +1,24 @@
 import 'package:atividade_final_dart/utilidades.dart';
 import 'package:yaansi/yaansi.dart';
 
+final buffer = StringBuffer();
+
 //Metodo para chamar os relatorios
-void chamarMetodosUmidade(String uF) async {
+Future<void> chamarMetodosUmidade() async {
   try {
-    await analiseAnualUmidade(uF);
-    await analiseMensalUmidade(uF);
+    //chamando os metodos e passando o UF como parametro
+    await analiseAnualUmidade('SC');
+    await analiseAnualUmidade('SP');
+
+    await analiseMensalUmidade('SC');
+    await analiseMensalUmidade('SP');
+
+    //Para salvar o relatorio da umidade gerado
+    await salvarRelatorio(buffer.toString(), 'UMIDADE');
+
+    buffer.clear(); //Limpando o buffer
+
+    print('Relatório completo salvo com sucesso.\n');
   } catch (e){
     print('Erro ao chamar métodos da umidade: $e');
   }
@@ -27,7 +40,7 @@ Future<void> analiseAnualUmidade(String estado) async{
     
     //Verifica se retornou vazia
     if (umidade.isEmpty){
-      print('Nenhuma dado de umidade válido encontrado.\n');
+      buffer.writeln('Nenhuma dado de umidade válido encontrado.\n');
       return;
     }
 
@@ -55,6 +68,7 @@ Future<void> analiseMensalUmidade(String estado) async{
     //Verifica se as linhas estão vazias
     if (dados.isEmpty) return;
 
+    buffer.writeln('Umidade no estado de $estado por mês:');
     print('Umidade no estado de $estado por mês:');
 
     //For para cada mês do ano (1 até 12)
@@ -67,7 +81,7 @@ Future<void> analiseMensalUmidade(String estado) async{
           .toList(); //Converte para lista
       //Verifica se nao retornou vazio
       if (umidade.isEmpty) {
-        print('Mês $mes: Sem dados.\n');
+        buffer.writeln('Mês $mes: Sem dados.\n');
         continue;
       }
 
@@ -89,8 +103,17 @@ Future<void> analiseMensalUmidade(String estado) async{
 }
 //Imprimir umidade reunido em um metodo
 void imprimirUmidade (String texto, num maxUmidade, num mediaUmidade, num minUmidade){
-  print(texto);
-  print('Máxima: ${maxUmidade.toStringAsFixed(2)}'.red);
-  print('Média: ${mediaUmidade.toStringAsFixed(2)}'.green);
-  print('Mínima: ${minUmidade.toStringAsFixed(2)}\n'.blue);
+  // Cria uma String temporária para imprimir
+  final trecho = StringBuffer();
+  
+  trecho.writeln(texto);
+  trecho.writeln('Máxima: ${maxUmidade.toStringAsFixed(2)}'.red);
+  trecho.writeln('Média: ${mediaUmidade.toStringAsFixed(2)}'.green);
+  trecho.writeln('Mínima: ${minUmidade.toStringAsFixed(2)}\n'.blue);
+
+  // Print só do trecho atual
+  print(trecho.toString());
+
+  // Acumula no buffer
+  buffer.write(trecho.toString());
 }

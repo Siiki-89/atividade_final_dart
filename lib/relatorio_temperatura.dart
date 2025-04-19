@@ -43,7 +43,7 @@ Future<void> analiseAnulTemperatura (String estado) async {
 
     //Verifica se retornou vazia
     if (temperaturas.isEmpty) {
-      print('Nenhuma temperatura válida encontrada.\n');
+      buffer.writeln('Nenhuma temperatura válida encontrada.\n');
       return;
     }
     
@@ -85,7 +85,7 @@ Future<void> analiseMensalTemperatura(String estado) async {
 
       //Verifica se nao retornou vazio
       if (temperaturas.isEmpty) {
-        print('Mês $mes: Sem dados.\n');
+        buffer.writeln('Mês $mes: Sem dados.\n');
         continue;
       }
 
@@ -104,7 +104,6 @@ Future<void> analiseMensalTemperatura(String estado) async {
   } catch (e){
     print('Erro na análise mensal de temperatura: $e');
   }
-  
 }
 
 Future<void> mediaPorHora(String estado) async {
@@ -129,7 +128,7 @@ Future<void> mediaPorHora(String estado) async {
 
       //Verifica se não retornou vazio
       if (temperaturas.isEmpty) {
-        print('Hora $mes: Sem dados.\n');
+        buffer.writeln('Hora $mes: Sem dados.\n');
         continue;
       }
 

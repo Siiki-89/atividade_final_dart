@@ -2,10 +2,23 @@ import 'dart:collection';
 import 'package:atividade_final_dart/utilidades.dart';
 import 'package:yaansi/yaansi.dart';
 
-Future<void> chamarMetodosVento(String uF) async {
+final buffer = StringBuffer();
+
+Future<void> chamarMetodosVento() async {
   try{
-    await direcaoMaisFrequenteAnual(uF);
-    await direcaoMaisFrequenteMensal(uF);
+    //chamando os metodos e passando o UF como parametro
+    await direcaoMaisFrequenteAnual('SC');
+    await direcaoMaisFrequenteAnual('SP');
+
+    await direcaoMaisFrequenteMensal('SC');
+    await direcaoMaisFrequenteMensal('SP');
+
+    //Para salvar o relatorio do vento gerado
+    await salvarRelatorio(buffer.toString(), 'VENTO');
+
+    buffer.clear(); //Limpando o buffer
+
+    print('Relatório completo salvo com sucesso.\n');
   } catch (e){
     print('Erro ao chamar métodos do vento: $e');
   }
@@ -26,7 +39,7 @@ Future<void> direcaoMaisFrequenteAnual(String estado) async {
         .toList();
 
     if (direcoes.isEmpty) {
-      print('Nenhuma direção de vento válida encontrada.\n');
+      buffer.writeln('Nenhuma direção de vento válida encontrada.\n');
       return;
     }
 
@@ -58,6 +71,7 @@ Future<void> direcaoMaisFrequenteMensal(String estado) async {
     //Verifica se está vazia
     if (dados.isEmpty) return;
 
+    buffer.writeln('Direção do vento mais frequente em $estado por mês:');
     print('Direção do vento mais frequente em $estado por mês:');
 
     //For para cada mês do ano (1 até 12)
@@ -71,7 +85,7 @@ Future<void> direcaoMaisFrequenteMensal(String estado) async {
           .toList(); //Converte para lista
       //Verifica se nao retornou vazio
       if (direcoes.isEmpty) {
-        print('Mês $mes: Sem dados.\n');
+        buffer.writeln('Mês $mes: Sem dados.\n');
         continue;
       }
 
@@ -94,8 +108,17 @@ Future<void> direcaoMaisFrequenteMensal(String estado) async {
   }
 }
 
+//Imprimir umidade reunido em um metodo
 void imprimirVento(String texto, MapEntry<num, int> maisFrequente ){
-  print(texto);
-  print('Graus: ${maisFrequente.key}'.yellow);
-  print('Radianos: ${paraRadianos(maisFrequente.key.toDouble())}\n'.yellow);
+  // Cria uma String temporária para imprimir
+  final trecho = StringBuffer();
+
+  trecho.writeln(texto);
+  trecho.writeln('Graus: ${maisFrequente.key}'.yellow);
+  trecho.writeln('Radianos: ${paraRadianos(maisFrequente.key.toDouble())}\n'.yellow);
+
+  //Imprime e salva
+  print(trecho.toString());
+  // Acumula no buffer
+  buffer.write(trecho.toString());
 }

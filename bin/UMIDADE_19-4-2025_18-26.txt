@@ -1,0 +1,132 @@
+Umidade coletada em SC por ano:
+Máxima: 29117938.00
+Média: 12014456.48
+Mínima: 668.00
+
+Umidade coletada em SP por ano:
+Máxima: 21129853.00
+Média: 11041866.70
+Mínima: 1229.00
+
+Umidade no estado de SC por mês:
+No mês 1
+Máxima: 29117938.00
+Média: 15817475.15
+Mínima: 163215.00
+
+No mês 2
+Máxima: 22406025.00
+Média: 15360196.63
+Mínima: 18981.00
+
+No mês 3
+Máxima: 22342227.00
+Média: 14815812.42
+Mínima: 132348.00
+
+No mês 4
+Máxima: 19362615.00
+Média: 12265201.40
+Mínima: 91433.00
+
+No mês 5
+Máxima: 16397284.00
+Média: 10161814.43
+Mínima: 83021.00
+
+No mês 6
+Máxima: 16720167.00
+Média: 9214116.61
+Mínima: 668.00
+
+No mês 7
+Máxima: 14327976.00
+Média: 9630791.29
+Mínima: 56382.00
+
+No mês 8
+Máxima: 14590811.00
+Média: 9370598.39
+Mínima: 55447.00
+
+No mês 9
+Máxima: 15630154.00
+Média: 11097391.23
+Mínima: 96145.00
+
+No mês 10
+Máxima: 18304299.00
+Média: 11358494.81
+Mínima: 10627.00
+
+No mês 11
+Máxima: 20529234.00
+Média: 12170130.12
+Mínima: 76702.00
+
+No mês 12
+Máxima: 21357743.00
+Média: 13128430.62
+Mínima: 13274.00
+
+Umidade no estado de SP por mês:
+No mês 1
+Máxima: 19276752.00
+Média: 13264651.44
+Mínima: 13873.00
+
+No mês 2
+Máxima: 21129853.00
+Média: 14043632.05
+Mínima: 128359.00
+
+No mês 3
+Máxima: 19911768.00
+Média: 13609231.73
+Mínima: 16808.00
+
+No mês 4
+Máxima: 16452781.00
+Média: 11108822.02
+Mínima: 11839.00
+
+No mês 5
+Máxima: 15867737.00
+Média: 10457633.18
+Mínima: 100106.00
+
+No mês 6
+Máxima: 14797183.00
+Média: 10038538.31
+Mínima: 7895.00
+
+No mês 7
+Máxima: 12639172.00
+Média: 8732197.41
+Mínima: 82198.00
+
+No mês 8
+Máxima: 13508356.00
+Média: 8228961.61
+Mínima: 67888.00
+
+No mês 9
+Máxima: 14273101.00
+Média: 10036520.28
+Mínima: 11839.00
+
+No mês 10
+Máxima: 16295225.00
+Média: 10647821.24
+Mínima: 89838.00
+
+No mês 11
+Máxima: 15579221.00
+Média: 10954534.35
+Mínima: 1229.00
+
+No mês 12
+Máxima: 19894477.00
+Média: 11604896.92
+Mínima: 83054.00
+
