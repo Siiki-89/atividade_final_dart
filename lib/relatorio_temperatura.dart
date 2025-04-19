@@ -5,6 +5,7 @@ final buffer = StringBuffer();
 
 Future<void> chamarMetodosTemperatura() async {
   try {
+    //chamando os metodos e passando o UF como parametro
     await analiseAnulTemperatura('SC');
     await analiseAnulTemperatura('SP');
     
@@ -14,8 +15,11 @@ Future<void> chamarMetodosTemperatura() async {
     await mediaPorHora('SC');
     await mediaPorHora('SP');
 
+    //Para salvar o relatorio da temperatura gerado
     await salvarRelatorio(buffer.toString(), 'CLIMA');
-    buffer.clear();
+
+    buffer.clear(); //Limpando o buffer
+
     print('Relatório completo salvo com sucesso.\n');
   } catch (e) {
     print('Erro ao chamar métodos de temperatura: $e');
@@ -33,8 +37,8 @@ Future<void> analiseAnulTemperatura (String estado) async {
 
     //Obtem as temperaturas
     final temperaturas = dados
-        .where((dados) => dados['Temperatura'] is num)
-        .map((dados) => dados['Temperatura'] as num)
+        .where((dados) => dados['Temperatura'] is num) //Garante que a umidade seja numérica
+        .map((dados) => dados['Temperatura'] as num) //Converte para num
         .toList();
 
     //Verifica se retornou vazia
@@ -144,16 +148,16 @@ Future<void> mediaPorHora(String estado) async {
 
 //Imprimir temperaturas reunido em um unico metodo
 void imprimirTemperaturas(String texto, double media, num maxTemp, num minTemp) async {
-  
+//Utilizando o buffer para salvar o texto, printar no terminal e usa-lo para gerar o relatorio 
   if(maxTemp == 0 && minTemp == 0){
     //mediaPorHora
     buffer.writeln('$texto:');
     buffer.writeln('Média C°: ${media.toStringAsFixed(2)}'.red);
     buffer.writeln('Fahrenheit: ${paraFahrenheit(media)}'.yellow);
     buffer.writeln('Kelvin: ${paraKelvin(media)}\n'.blue);
+
     //Imprime e salva
     print(buffer.toString());
-
   } else {
     //Média
     buffer.writeln('$texto:');

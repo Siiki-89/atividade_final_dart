@@ -38,20 +38,25 @@ String paraRadianos(double graus) => (graus * (pi / 180)).toStringAsFixed(4);
 
 //Metodo para salvar relatorio em um arquivo txt
 Future<void> salvarRelatorio(String texto, String tipo) async {
-  try{
+  try {
+    // Remover os códigos ANSI
+    final textoLimpo = removerANSI(texto);
 
     final agora = DateTime.now();
     final data = formatarData(agora);
     final nomeArquivo = '$tipo\_$data.txt';
 
     final arquivo = File(nomeArquivo);
-    await arquivo.writeAsString(texto);
-
-  } catch (e){
+    await arquivo.writeAsString(textoLimpo);
+  } catch (e) {
     print('Erro ao salvar o relatório: $e');
   }
-  
 }
+
 String formatarData(DateTime data) {
   return '${data.day}-${data.month}-${data.year}_${data.hour}-${data.minute}';
+}
+String removerANSI(String texto) {
+  final ansiRegex = RegExp(r'\x1B\[([0-9;]*[a-zA-Z])');
+  return texto.replaceAll(ansiRegex, '');
 }

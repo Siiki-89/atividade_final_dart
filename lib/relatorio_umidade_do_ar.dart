@@ -21,8 +21,8 @@ Future<void> analiseAnualUmidade(String estado) async{
 
     //Obtem as umidades
     final umidade = dados
-        .where((dados) => dados['Umidade'] is num)
-        .map((dados) => dados['Umidade'] as num)
+        .where((dados) => dados['Umidade'] is num) //Garante que a umidade seja numérica
+        .map((dados) => dados['Umidade'] as num)  //Converte para num
         .toList();
     
     //Verifica se retornou vazia
