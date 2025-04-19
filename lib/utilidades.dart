@@ -1,5 +1,5 @@
+import 'dart:io';
 import 'dart:math';
-
 import 'ler_csv.dart';
 
 //Colunas de identificação
@@ -29,9 +29,29 @@ Future<List<Map<String, dynamic>>> obterLinhasValidas(String estado) async {
       .toList();
 }
 
-// Velocidade do vento
+//Velocidade do vento
 String paraKmH(double ms) => (ms * 3.6).toStringAsFixed(2);
 String paraMph(double ms) => (ms * 2.23694).toStringAsFixed(2);
 
-// Direção do vento
+//Direção do vento
 String paraRadianos(double graus) => (graus * (pi / 180)).toStringAsFixed(4);
+
+//Metodo para salvar relatorio em um arquivo txt
+Future<void> salvarRelatorio(String texto, String tipo) async {
+  try{
+
+    final agora = DateTime.now();
+    final data = formatarData(agora);
+    final nomeArquivo = '$tipo\_$data.txt';
+
+    final arquivo = File(nomeArquivo);
+    await arquivo.writeAsString(texto);
+
+  } catch (e){
+    print('Erro ao salvar o relatório: $e');
+  }
+  
+}
+String formatarData(DateTime data) {
+  return '${data.day}-${data.month}-${data.year}_${data.hour}-${data.minute}';
+}

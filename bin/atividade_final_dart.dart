@@ -8,6 +8,7 @@ void main () async {
     '\n1 - TEMPERATURA '
     '\n2 - UMIDADE '
     '\n3 - DIREÇÃO DO VENTO ');
+    
   while(continuar){
     
     stdout.write('DIGITE O NÚMERO DA OPÇÃO DESEJADA: ');
@@ -16,8 +17,7 @@ void main () async {
     switch (resposta){
       case '1':
         print('\n');
-        chamarMetodosTemperatura('SC');
-        chamarMetodosTemperatura('SP');
+        chamarMetodosTemperatura();
         continuar=false;
         break;
       case '2':
@@ -35,7 +35,6 @@ void main () async {
       default:
         print('RESPONDA 1, 2 OU 3 ');
 
-    }
-    
+    } 
   }
 }

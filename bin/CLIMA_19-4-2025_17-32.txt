@@ -1,0 +1,660 @@
+Média de temperatura em SC por ano::
+Média:
+[91mC°: 145.02[39m
+[93mFahrenheit: 293.03[39m
+[94mKelvin: 418.17
+[39m
+Temperatura máxima:
+[91mC°: 317.00[39m
+[93mFahrenheit: 602.60[39m
+[94mKelvin: 590.15
+[39m
+Temperatura mínima:
+[91mC°: 3.00[39m
+[93mFahrenheit: 37.40[39m
+[94mKelvin: 276.15
+[39m
+Média de temperatura em SP por ano::
+Média:
+[91mC°: 130.28[39m
+[93mFahrenheit: 266.50[39m
+[94mKelvin: 403.43
+[39m
+Temperatura máxima:
+[91mC°: 262.00[39m
+[93mFahrenheit: 503.60[39m
+[94mKelvin: 535.15
+[39m
+Temperatura mínima:
+[91mC°: 7.00[39m
+[93mFahrenheit: 44.60[39m
+[94mKelvin: 280.15
+[39m
+Temperatura no estado de SC por mês:
+Média no mês 1:
+Média:
+[91mC°: 175.18[39m
+[93mFahrenheit: 347.32[39m
+[94mKelvin: 448.33
+[39m
+Temperatura máxima:
+[91mC°: 317.00[39m
+[93mFahrenheit: 602.60[39m
+[94mKelvin: 590.15
+[39m
+Temperatura mínima:
+[91mC°: 18.00[39m
+[93mFahrenheit: 64.40[39m
+[94mKelvin: 291.15
+[39m
+Média no mês 2:
+Média:
+[91mC°: 179.85[39m
+[93mFahrenheit: 355.72[39m
+[94mKelvin: 453.00
+[39m
+Temperatura máxima:
+[91mC°: 278.00[39m
+[93mFahrenheit: 532.40[39m
+[94mKelvin: 551.15
+[39m
+Temperatura mínima:
+[91mC°: 17.00[39m
+[93mFahrenheit: 62.60[39m
+[94mKelvin: 290.15
+[39m
+Média no mês 3:
+Média:
+[91mC°: 178.99[39m
+[93mFahrenheit: 354.18[39m
+[94mKelvin: 452.14
+[39m
+Temperatura máxima:
+[91mC°: 278.00[39m
+[93mFahrenheit: 532.40[39m
+[94mKelvin: 551.15
+[39m
+Temperatura mínima:
+[91mC°: 17.00[39m
+[93mFahrenheit: 62.60[39m
+[94mKelvin: 290.15
+[39m
+Média no mês 4:
+Média:
+[91mC°: 138.15[39m
+[93mFahrenheit: 280.68[39m
+[94mKelvin: 411.30
+[39m
+Temperatura máxima:
+[91mC°: 252.00[39m
+[93mFahrenheit: 485.60[39m
+[94mKelvin: 525.15
+[39m
+Temperatura mínima:
+[91mC°: 12.00[39m
+[93mFahrenheit: 53.60[39m
+[94mKelvin: 285.15
+[39m
+Média no mês 5:
+Média:
+[91mC°: 136.04[39m
+[93mFahrenheit: 276.88[39m
+[94mKelvin: 409.19
+[39m
+Temperatura máxima:
+[91mC°: 227.00[39m
+[93mFahrenheit: 440.60[39m
+[94mKelvin: 500.15
+[39m
+Temperatura mínima:
+[91mC°: 9.00[39m
+[93mFahrenheit: 48.20[39m
+[94mKelvin: 282.15
+[39m
+Média no mês 6:
+Média:
+[91mC°: 120.12[39m
+[93mFahrenheit: 248.22[39m
+[94mKelvin: 393.27
+[39m
+Temperatura máxima:
+[91mC°: 227.00[39m
+[93mFahrenheit: 440.60[39m
+[94mKelvin: 500.15
+[39m
+Temperatura mínima:
+[91mC°: 3.00[39m
+[93mFahrenheit: 37.40[39m
+[94mKelvin: 276.15
+[39m
+Média no mês 7:
+Média:
+[91mC°: 119.17[39m
+[93mFahrenheit: 246.50[39m
+[94mKelvin: 392.32
+[39m
+Temperatura máxima:
+[91mC°: 215.00[39m
+[93mFahrenheit: 419.00[39m
+[94mKelvin: 488.15
+[39m
+Temperatura mínima:
+[91mC°: 5.00[39m
+[93mFahrenheit: 41.00[39m
+[94mKelvin: 278.15
+[39m
+Média no mês 8:
+Média:
+[91mC°: 121.70[39m
+[93mFahrenheit: 251.06[39m
+[94mKelvin: 394.85
+[39m
+Temperatura máxima:
+[91mC°: 207.00[39m
+[93mFahrenheit: 404.60[39m
+[94mKelvin: 480.15
+[39m
+Temperatura mínima:
+[91mC°: 4.00[39m
+[93mFahrenheit: 39.20[39m
+[94mKelvin: 277.15
+[39m
+Média no mês 9:
+Média:
+[91mC°: 137.24[39m
+[93mFahrenheit: 279.04[39m
+[94mKelvin: 410.39
+[39m
+Temperatura máxima:
+[91mC°: 217.00[39m
+[93mFahrenheit: 422.60[39m
+[94mKelvin: 490.15
+[39m
+Temperatura mínima:
+[91mC°: 12.00[39m
+[93mFahrenheit: 53.60[39m
+[94mKelvin: 285.15
+[39m
+Média no mês 10:
+Média:
+[91mC°: 138.48[39m
+[93mFahrenheit: 281.26[39m
+[94mKelvin: 411.63
+[39m
+Temperatura máxima:
+[91mC°: 245.00[39m
+[93mFahrenheit: 473.00[39m
+[94mKelvin: 518.15
+[39m
+Temperatura mínima:
+[91mC°: 10.00[39m
+[93mFahrenheit: 50.00[39m
+[94mKelvin: 283.15
+[39m
+Média no mês 11:
+Média:
+[91mC°: 145.97[39m
+[93mFahrenheit: 294.74[39m
+[94mKelvin: 419.12
+[39m
+Temperatura máxima:
+[91mC°: 263.00[39m
+[93mFahrenheit: 505.40[39m
+[94mKelvin: 536.15
+[39m
+Temperatura mínima:
+[91mC°: 13.00[39m
+[93mFahrenheit: 55.40[39m
+[94mKelvin: 286.15
+[39m
+Média no mês 12:
+Média:
+[91mC°: 151.47[39m
+[93mFahrenheit: 304.65[39m
+[94mKelvin: 424.62
+[39m
+Temperatura máxima:
+[91mC°: 267.00[39m
+[93mFahrenheit: 512.60[39m
+[94mKelvin: 540.15
+[39m
+Temperatura mínima:
+[91mC°: 13.00[39m
+[93mFahrenheit: 55.40[39m
+[94mKelvin: 286.15
+[39m
+Temperatura no estado de SP por mês:
+Média no mês 1:
+Média:
+[91mC°: 156.83[39m
+[93mFahrenheit: 314.30[39m
+[94mKelvin: 429.98
+[39m
+Temperatura máxima:
+[91mC°: 247.00[39m
+[93mFahrenheit: 476.60[39m
+[94mKelvin: 520.15
+[39m
+Temperatura mínima:
+[91mC°: 15.00[39m
+[93mFahrenheit: 59.00[39m
+[94mKelvin: 288.15
+[39m
+Média no mês 2:
+Média:
+[91mC°: 156.56[39m
+[93mFahrenheit: 313.80[39m
+[94mKelvin: 429.71
+[39m
+Temperatura máxima:
+[91mC°: 262.00[39m
+[93mFahrenheit: 503.60[39m
+[94mKelvin: 535.15
+[39m
+Temperatura mínima:
+[91mC°: 17.00[39m
+[93mFahrenheit: 62.60[39m
+[94mKelvin: 290.15
+[39m
+Média no mês 3:
+Média:
+[91mC°: 151.75[39m
+[93mFahrenheit: 305.14[39m
+[94mKelvin: 424.90
+[39m
+Temperatura máxima:
+[91mC°: 245.00[39m
+[93mFahrenheit: 473.00[39m
+[94mKelvin: 518.15
+[39m
+Temperatura mínima:
+[91mC°: 16.00[39m
+[93mFahrenheit: 60.80[39m
+[94mKelvin: 289.15
+[39m
+Média no mês 4:
+Média:
+[91mC°: 129.32[39m
+[93mFahrenheit: 264.78[39m
+[94mKelvin: 402.47
+[39m
+Temperatura máxima:
+[91mC°: 211.00[39m
+[93mFahrenheit: 411.80[39m
+[94mKelvin: 484.15
+[39m
+Temperatura mínima:
+[91mC°: 11.00[39m
+[93mFahrenheit: 51.80[39m
+[94mKelvin: 284.15
+[39m
+Média no mês 5:
+Média:
+[91mC°: 122.72[39m
+[93mFahrenheit: 252.90[39m
+[94mKelvin: 395.87
+[39m
+Temperatura máxima:
+[91mC°: 204.00[39m
+[93mFahrenheit: 399.20[39m
+[94mKelvin: 477.15
+[39m
+Temperatura mínima:
+[91mC°: 10.00[39m
+[93mFahrenheit: 50.00[39m
+[94mKelvin: 283.15
+[39m
+Média no mês 6:
+Média:
+[91mC°: 118.49[39m
+[93mFahrenheit: 245.28[39m
+[94mKelvin: 391.64
+[39m
+Temperatura máxima:
+[91mC°: 202.00[39m
+[93mFahrenheit: 395.60[39m
+[94mKelvin: 475.15
+[39m
+Temperatura mínima:
+[91mC°: 9.00[39m
+[93mFahrenheit: 48.20[39m
+[94mKelvin: 282.15
+[39m
+Média no mês 7:
+Média:
+[91mC°: 109.91[39m
+[93mFahrenheit: 229.83[39m
+[94mKelvin: 383.06
+[39m
+Temperatura máxima:
+[91mC°: 178.00[39m
+[93mFahrenheit: 352.40[39m
+[94mKelvin: 451.15
+[39m
+Temperatura mínima:
+[91mC°: 10.00[39m
+[93mFahrenheit: 50.00[39m
+[94mKelvin: 283.15
+[39m
+Média no mês 8:
+Média:
+[91mC°: 109.17[39m
+[93mFahrenheit: 228.51[39m
+[94mKelvin: 382.32
+[39m
+Temperatura máxima:
+[91mC°: 196.00[39m
+[93mFahrenheit: 384.80[39m
+[94mKelvin: 469.15
+[39m
+Temperatura mínima:
+[91mC°: 7.00[39m
+[93mFahrenheit: 44.60[39m
+[94mKelvin: 280.15
+[39m
+Média no mês 9:
+Média:
+[91mC°: 123.46[39m
+[93mFahrenheit: 254.22[39m
+[94mKelvin: 396.61
+[39m
+Temperatura máxima:
+[91mC°: 208.00[39m
+[93mFahrenheit: 406.40[39m
+[94mKelvin: 481.15
+[39m
+Temperatura mínima:
+[91mC°: 9.00[39m
+[93mFahrenheit: 48.20[39m
+[94mKelvin: 282.15
+[39m
+Média no mês 10:
+Média:
+[91mC°: 124.86[39m
+[93mFahrenheit: 256.75[39m
+[94mKelvin: 398.01
+[39m
+Temperatura máxima:
+[91mC°: 221.00[39m
+[93mFahrenheit: 429.80[39m
+[94mKelvin: 494.15
+[39m
+Temperatura mínima:
+[91mC°: 11.00[39m
+[93mFahrenheit: 51.80[39m
+[94mKelvin: 284.15
+[39m
+Média no mês 11:
+Média:
+[91mC°: 126.41[39m
+[93mFahrenheit: 259.54[39m
+[94mKelvin: 399.56
+[39m
+Temperatura máxima:
+[91mC°: 208.00[39m
+[93mFahrenheit: 406.40[39m
+[94mKelvin: 481.15
+[39m
+Temperatura mínima:
+[91mC°: 13.00[39m
+[93mFahrenheit: 55.40[39m
+[94mKelvin: 286.15
+[39m
+Média no mês 12:
+Média:
+[91mC°: 135.62[39m
+[93mFahrenheit: 276.11[39m
+[94mKelvin: 408.77
+[39m
+Temperatura máxima:
+[91mC°: 235.00[39m
+[93mFahrenheit: 455.00[39m
+[94mKelvin: 508.15
+[39m
+Temperatura mínima:
+[91mC°: 12.00[39m
+[93mFahrenheit: 53.60[39m
+[94mKelvin: 285.15
+[39m
+Média, Máxima e Mínima de temperatura no estado de SC por hora:
+Hora 1:
+Média C°: 138.62
+Fahrenheit: 281.51
+Kelvin: 411.77
+
+Hora 2:
+Média C°: 145.68
+Fahrenheit: 294.22
+Kelvin: 418.83
+
+Hora 3:
+Média C°: 139.94
+Fahrenheit: 283.89
+Kelvin: 413.09
+
+Hora 4:
+Média C°: 139.12
+Fahrenheit: 282.42
+Kelvin: 412.27
+
+Hora 5:
+Média C°: 147.50
+Fahrenheit: 297.50
+Kelvin: 420.65
+
+Hora 6:
+Média C°: 136.49
+Fahrenheit: 277.68
+Kelvin: 409.64
+
+Hora 7:
+Média C°: 132.38
+Fahrenheit: 270.29
+Kelvin: 405.53
+
+Hora 8:
+Média C°: 135.93
+Fahrenheit: 276.67
+Kelvin: 409.08
+
+Hora 9:
+Média C°: 139.65
+Fahrenheit: 283.37
+Kelvin: 412.80
+
+Hora 10:
+Média C°: 143.99
+Fahrenheit: 291.19
+Kelvin: 417.14
+
+Hora 11:
+Média C°: 149.90
+Fahrenheit: 301.81
+Kelvin: 423.05
+
+Hora 12:
+Média C°: 157.01
+Fahrenheit: 314.61
+Kelvin: 430.16
+
+Hora 13:
+Média C°: 165.62
+Fahrenheit: 330.12
+Kelvin: 438.77
+
+Hora 14:
+Média C°: 156.56
+Fahrenheit: 313.82
+Kelvin: 429.71
+
+Hora 15:
+Média C°: 149.86
+Fahrenheit: 301.75
+Kelvin: 423.01
+
+Hora 16:
+Média C°: 149.12
+Fahrenheit: 300.41
+Kelvin: 422.27
+
+Hora 17:
+Média C°: 144.55
+Fahrenheit: 292.19
+Kelvin: 417.70
+
+Hora 18:
+Média C°: 143.54
+Fahrenheit: 290.37
+Kelvin: 416.69
+
+Hora 19:
+Média C°: 149.76
+Fahrenheit: 301.56
+Kelvin: 422.91
+
+Hora 20:
+Média C°: 150.55
+Fahrenheit: 302.99
+Kelvin: 423.70
+
+Hora 21:
+Média C°: 143.09
+Fahrenheit: 289.56
+Kelvin: 416.24
+
+Hora 22:
+Média C°: 134.03
+Fahrenheit: 273.25
+Kelvin: 407.18
+
+Hora 23:
+Média C°: 145.24
+Fahrenheit: 293.43
+Kelvin: 418.39
+
+Hora 24:
+Média C°: 142.35
+Fahrenheit: 288.22
+Kelvin: 415.50
+
+Média, Máxima e Mínima de temperatura no estado de SP por hora:
+Hora 1:
+Média C°: 126.52
+Fahrenheit: 259.73
+Kelvin: 399.67
+
+Hora 2:
+Média C°: 130.09
+Fahrenheit: 266.16
+Kelvin: 403.24
+
+Hora 3:
+Média C°: 128.47
+Fahrenheit: 263.25
+Kelvin: 401.62
+
+Hora 4:
+Média C°: 126.01
+Fahrenheit: 258.82
+Kelvin: 399.16
+
+Hora 5:
+Média C°: 129.18
+Fahrenheit: 264.53
+Kelvin: 402.33
+
+Hora 6:
+Média C°: 126.16
+Fahrenheit: 259.09
+Kelvin: 399.31
+
+Hora 7:
+Média C°: 123.92
+Fahrenheit: 255.06
+Kelvin: 397.07
+
+Hora 8:
+Média C°: 122.00
+Fahrenheit: 251.60
+Kelvin: 395.15
+
+Hora 9:
+Média C°: 127.35
+Fahrenheit: 261.24
+Kelvin: 400.50
+
+Hora 10:
+Média C°: 125.30
+Fahrenheit: 257.55
+Kelvin: 398.45
+
+Hora 11:
+Média C°: 124.90
+Fahrenheit: 256.83
+Kelvin: 398.05
+
+Hora 12:
+Média C°: 136.89
+Fahrenheit: 278.40
+Kelvin: 410.04
+
+Hora 13:
+Média C°: 136.62
+Fahrenheit: 277.92
+Kelvin: 409.77
+
+Hora 14:
+Média C°: 136.89
+Fahrenheit: 278.41
+Kelvin: 410.04
+
+Hora 15:
+Média C°: 138.40
+Fahrenheit: 281.12
+Kelvin: 411.55
+
+Hora 16:
+Média C°: 136.89
+Fahrenheit: 278.40
+Kelvin: 410.04
+
+Hora 17:
+Média C°: 138.54
+Fahrenheit: 281.37
+Kelvin: 411.69
+
+Hora 18:
+Média C°: 129.23
+Fahrenheit: 264.62
+Kelvin: 402.38
+
+Hora 19:
+Média C°: 130.03
+Fahrenheit: 266.06
+Kelvin: 403.18
+
+Hora 20:
+Média C°: 131.41
+Fahrenheit: 268.54
+Kelvin: 404.56
+
+Hora 21:
+Média C°: 133.95
+Fahrenheit: 273.10
+Kelvin: 407.10
+
+Hora 22:
+Média C°: 129.90
+Fahrenheit: 265.83
+Kelvin: 403.05
+
+Hora 23:
+Média C°: 129.30
+Fahrenheit: 264.73
+Kelvin: 402.45
+
+Hora 24:
+Média C°: 128.64
+Fahrenheit: 263.55
+Kelvin: 401.79
+
